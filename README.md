@@ -3,7 +3,7 @@
 
 **Discover Destinations** ist eine interaktive Web-App, die es Nutzern ermöglicht, spannende Reiseziele zu entdecken, zu bewerten und ihre eigenen Vorschläge hinzuzufügen. Die App bietet eine nahtlose Benutzeroberfläche, um Reiseziele zu filtern, Stimmen abzugeben und mehr über beliebte Orte in Deutschland und Tunesien zu erfahren.
 
-![App Screenshot](./public/App_Screenshot.png)
+![App Screenshot](./public/App_screenshot.png)
 
 ---
 
@@ -51,7 +51,7 @@ DestinaShare/
 
 1. Klone das Repository:
    ```bash
-   git clone https://github.com/deinbenutzername/discover-destinations.git
+   git clone https://code.fbi.h-da.de/stailaji/destinashare.git
    ```
 2. Wechsle ins Projektverzeichnis:
    ```bash
