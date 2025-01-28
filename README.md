@@ -3,7 +3,7 @@
 
 **Discover Destinations** ist eine interaktive Web-App, die es Nutzern ermöglicht, spannende Reiseziele zu entdecken, zu bewerten und ihre eigenen Vorschläge hinzuzufügen. Die App bietet eine nahtlose Benutzeroberfläche, um Reiseziele zu filtern, Stimmen abzugeben und mehr über beliebte Orte in Deutschland und Tunesien zu erfahren.
 
-![App Screenshot](./public/logo.png)
+![App Screenshot](./public/App_Screenshot.png)
 
 ---
 
