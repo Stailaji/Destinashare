@@ -51,7 +51,7 @@ function App() {
 }
 
 function Header({ showForm, setShowForm }) {
-  const appTitle = 'Explore Destinations';
+  const appTitle = 'Destinashare';
 
   return (
     <header className="app-header">
