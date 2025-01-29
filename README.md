@@ -51,7 +51,7 @@ DestinaShare/
 
 1. Klone das Repository:
    ```bash
-   git clone https://code.fbi.h-da.de/stailaji/destinashare.git
+   git clone https://github.com/Stailaji/Destinashare.git
    ```
 2. Wechsle ins Projektverzeichnis:
    ```bash
