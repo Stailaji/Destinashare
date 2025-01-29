@@ -13,8 +13,7 @@ Die Projektstruktur ist klar und übersichtlich organisiert, um eine einfache Na
 
 ```
 DestinaShare/
-├── build/                
-├── node_modules/         
+        
 ├── public/
 │   ├── index.html        # HTML-Template der App
 │   ├── logo.png          
