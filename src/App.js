@@ -3,6 +3,7 @@ import supabase from './supabase';
 
 import './style.css';
 
+// Kategorien für Reiseziele (Farben für die UI)
 const CATEGORIES = [
   { name: 'city', color: '#3b82f6' },
   { name: 'nature', color: '#16a34a' },
@@ -18,6 +19,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('all');
 
+// Holt Reiseziele aus der Datenbank, wenn sich die Kategorie ändert
   useEffect(() => {
     async function getDestinations() {
       setIsLoading(true);
@@ -50,6 +52,7 @@ function App() {
   );
 }
 
+// Header mit Logo und Button zum Öffnen des Formulars
 function Header({ showForm, setShowForm }) {
   const appTitle = 'Destinashare';
 
@@ -67,10 +70,12 @@ function Header({ showForm, setShowForm }) {
   );
 }
 
+// Ladeanzeige während des Datenabrufs
 function Loader() {
   return <p className="loading-message">Loading...</p>;
 }
 
+// Kategorie-Filter für die Reiseziele
 function CategoryFilter({ setCurrentCategory }) {
   return (
     <aside className="category-filter">
@@ -97,6 +102,7 @@ function CategoryFilter({ setCurrentCategory }) {
   );
 }
 
+// Zeigt die Liste der gespeicherten Reiseziele an
 function DestinationList({ destinations, setDestinations }) {
   if (destinations.length === 0)
     return <p className="no-destinations-message">No destinations found! Add the first one ✌️</p>;
@@ -113,6 +119,7 @@ function DestinationList({ destinations, setDestinations }) {
   );
 }
 
+// Einzelnes Reiseziel mit Abstimmungsbuttons
 function DestinationItem({ destination, setDestinations }) {
   const [isUpdating, setIsUpdating] = useState(false);
 
@@ -125,6 +132,7 @@ function DestinationItem({ destination, setDestinations }) {
       .select();
     setIsUpdating(false);
 
+// Aktualisiert die Liste mit dem neuen Voting-Status
     if (!error) {
       setDestinations((prev) =>
         prev.map((d) => (d.id === destination.id ? updatedDestination[0] : d))
@@ -163,6 +171,7 @@ function DestinationItem({ destination, setDestinations }) {
   );
 }
 
+// Formular zum Hinzufügen neuer Reiseziele
 function NewDestinationForm({ setDestinations, setShowForm }) {
   const [text, setText] = useState('');
   const [source, setSource] = useState('');
@@ -174,7 +183,8 @@ function NewDestinationForm({ setDestinations, setShowForm }) {
 
     if (text && source && category) {
       setIsUploading(true);
-
+      
+    // Fügt ein neues Reiseziel zur Datenbank hinzu
       const { data: newDestination, error } = await supabase
         .from('destinations')
         .insert([

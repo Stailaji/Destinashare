@@ -1,9 +1,9 @@
 
-# 🌍 Discover Destinations
+# 🌍 Destinashare
 
-**Discover Destinations** ist eine interaktive Web-App, die es Nutzern ermöglicht, spannende Reiseziele zu entdecken, zu bewerten und ihre eigenen Vorschläge hinzuzufügen. Die App bietet eine nahtlose Benutzeroberfläche, um Reiseziele zu filtern, Stimmen abzugeben und mehr über beliebte Orte in Deutschland und Tunesien zu erfahren.
+**Destinashare** ist eine interaktive Web-App, die es Nutzern ermöglicht, spannende Reiseziele zu entdecken, zu bewerten und ihre eigenen Vorschläge hinzuzufügen. Die App bietet eine nahtlose Benutzeroberfläche, um Reiseziele zu filtern, Stimmen abzugeben und mehr über beliebte Orte in Deutschland und Tunesien zu erfahren.
 
-![App Screenshot](./public/App_screenshot.png)
+➡ **👉 [Hier die Live-Version testen](https://destinashare-aia-lajimi.netlify.app/)** 
 
 ---
 
@@ -13,25 +13,25 @@ Die Projektstruktur ist klar und übersichtlich organisiert, um eine einfache Na
 
 ```
 DestinaShare/
-├── build/                # Produktionsbereit erstellte Dateien
-├── node_modules/         # Abhängigkeiten des Projekts
+├── build/                
+├── node_modules/         
 ├── public/
 │   ├── index.html        # HTML-Template der App
-│   ├── logo.png          # App-Logo
+│   ├── logo.png          
 ├── src/
 │   ├── App.js            # Hauptkomponente der App
-│   ├── index.js          # Einstiegspunkt für React
+│   ├── index.js          
 │   ├── style.css         # Hauptstylesheet
 │   ├── supabase.js       # Konfiguration der Supabase-Integration
-├── .gitignore            # Ignorierte Dateien für Git
-├── package.json          # Projektabhängigkeiten und Skripte
-├── package-lock.json     # Genaue Abhängigkeitsversionen
-├── README.md             # Dokumentation des Projekts
+├── .gitignore            
+├── package.json          
+├── package-lock.json     
+├── README.md            
 ```
 
 ---
 
-## 🌟 Hauptfunktionen
+## Hauptfunktionen
 
 - **Kategorienfilter:** Entdecke Reiseziele in Kategorien wie `City`, `Beach`, `Adventure`, `Culture`, `Relaxation` und mehr.
 - **Bewertungssystem:** Nutzer können Reiseziele als "Empfohlen", "Muss besucht werden" oder "Nicht lohnenswert" bewerten.
@@ -77,16 +77,8 @@ npm start
 
 - **Frontend:** React, HTML, CSS
 - **Backend:** Supabase für Datenbank und API
-- **Styling:** Anpassbares CSS
 
 
----
 
-## 🤝 Beitrag leisten
 
-1. Forke das Repository.
-2. Erstelle einen neuen Branch (`git checkout -b feature/dein-feature`).
-3. Führe deine Änderungen durch und committe sie (`git commit -m 'Füge neues Feature hinzu'`).
-4. Push deinen Branch (`git push origin feature/dein-feature`).
-5. Erstelle eine Pull-Request.
 
